@@ -1,16 +1,28 @@
-# React + Vite
+# 🎬 Movie Database Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A dynamic, API-driven React web application acting as the foundational UI prototype for a future Full-Stack AI Content Studio.
 
-Currently, two official plugins are available:
+## 🚀 Overview
+This project is a dedicated frontend architecture build. The goal of this application is to master asynchronous data fetching, React component lifecycle, and state management by building a production-ready movie exploration interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project was initiated as part of the **Hack Club Flavortown Arcade** hardware sprint.
 
-## React Compiler
+## ✨ Core Features (Current Scope)
+* **Real-Time Search Filtering:** Instant visual feedback as users type, filtering through massive datasets seamlessly.
+* **Asynchronous Data Fetching:** Live integration with the **TMDB (The Movie Database) API** to pull high-quality, up-to-date movie posters, ratings, and descriptions.
+* **Multi-Page Routing:** Built with React Router to ensure smooth, client-side navigation without page reloads.
+* **Component-Driven UI:** Clean, modular JSX architecture built for scalability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+* **Framework:** React.js
+* **Build Tool:** Vite (for lightning-fast HMR)
+* **Routing:** React Router
+* **Data Source:** TMDB API
+* **Environment:** GitHub Codespaces (Linux)
 
-## Expanding the ESLint configuration
+## 💻 Local Development Setup
+To run this project locally or in your own Codespace:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Abhidalle/movie-database-dashboard.git](https://github.com/Abhidalle/movie-database-dashboard.git)
