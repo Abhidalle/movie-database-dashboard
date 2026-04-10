@@ -1,28 +1,29 @@
-# 🎬 Movie Database Dashboard
+# NextWatch - Persistent Movie Discovery Engine 🎬
 
-> A dynamic, API-driven React web application acting as the foundational UI prototype for a future Full-Stack AI Content Studio.
+NextWatch is a sleek, high-performance React application built to streamline how users discover and curate their cinematic queue. Moving beyond a standard database, NextWatch serves as a foundational prototype for a future AI-driven content studio, focusing on minimalism, speed, and data persistence.
 
-## 🚀 Overview
-This project is a dedicated frontend architecture build. The goal of this application is to master asynchronous data fetching, React component lifecycle, and state management by building a production-ready movie exploration interface.
+## 🚀 Technical Highlights
 
-This project was initiated as part of the **Hack Club Flavortown Arcade** hardware sprint.
-
-## ✨ Core Features (Current Scope)
-* **Real-Time Search Filtering:** Instant visual feedback as users type, filtering through massive datasets seamlessly.
-* **Asynchronous Data Fetching:** Live integration with the **TMDB (The Movie Database) API** to pull high-quality, up-to-date movie posters, ratings, and descriptions.
-* **Multi-Page Routing:** Built with React Router to ensure smooth, client-side navigation without page reloads.
-* **Component-Driven UI:** Clean, modular JSX architecture built for scalability.
+- **Global State Management:** Orchestrated via the **React Context API**, ensuring a unified data stream between the discovery gallery and the user's personal queue.
+- **Asynchronous Data Layer:** Fully integrated with the **TMDB API** using modern `async/await` patterns for real-time search and movie retrieval.
+- **Optimized Persistence:** Implemented **Lazy State Initialization** with browser `localStorage`. This ensures saved data is retrieved synchronously during the initial mount, preventing UI flickers and redundant re-renders.
+- **SPA Routing:** Managed by `react-router-dom` for seamless, zero-refresh navigation.
+- **Stealth UI/UX:** A custom-built, dark-slate design system focused on content-first architecture, moving away from generic CSS templates.
 
 ## 🛠️ Tech Stack
-* **Framework:** React.js
-* **Build Tool:** Vite (for lightning-fast HMR)
-* **Routing:** React Router
-* **Data Source:** TMDB API
-* **Environment:** GitHub Codespaces (Linux)
 
-## 💻 Local Development Setup
-To run this project locally or in your own Codespace:
+- **Frontend:** React 18 (Hooks, Context API)
+- **Build Tool:** Vite (Lightning-fast HMR)
+- **Styling:** Modern CSS3 (Flexbox/Grid, Stealth-mode theme)
+- **Deployment:** GitHub Codespaces / GitHub Pages
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Abhidalle/movie-database-dashboard.git](https://github.com/Abhidalle/movie-database-dashboard.git)
+## 📂 Project Structure
+
+```text
+src/
+├── components/     # Reusable UI (MovieCard, NavBar)
+├── contexts/       # Global State (MovieContext - The Brain)
+├── css/            # Modular Stylesheets
+├── pages/          # View Logic (Home, Favorites)
+├── services/       # API Integration (TMDB fetch logic)
+└── App.jsx         # Main Routing Hub
